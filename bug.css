@@ -1,0 +1,11 @@
+The CSS code has a syntax error that is difficult to spot.  The error is caused by a missing semicolon after a declaration within a nested selector.
+
+```css
+.container {
+  width: 500px;
+  .inner {
+    background-color: lightblue
+    /* Missing semicolon here */
+  }
+}
+```
