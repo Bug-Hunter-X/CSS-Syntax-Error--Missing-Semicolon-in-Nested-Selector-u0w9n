@@ -1,0 +1,12 @@
+The solution is to simply add the missing semicolon:
+
+```css
+.container {
+  width: 500px;
+  .inner {
+    background-color: lightblue;
+    /* Semicolon added */
+  }
+}
+```
+Adding the semicolon ensures that each declaration within the nested selector is correctly terminated.  This prevents any unintended style cascade effects.
